@@ -1,0 +1,7 @@
+---
+
+# Setup/install tasks.
+
+- name: Set up Ansible using Pip.
+  include_tasks: setup-pip.yml
+  when: ansible_install_method == 'pip'
